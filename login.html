@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Register || POS Merchant</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+
+    <!-- Required External CSS -->
+    <link href="assets/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+  </head>
+  <body>
+   
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 col-12 left-side">
+          <div class="tx-white pd-md-y-150 pd-md-x-50 pd-lg-x-80 uba-bg">
+            <p class="tx-64 tx-bold text-height-1">
+              UBA POS Merchant Portal
+            </p>
+            <p class="tx-20 col-md-9 pd-x-0">Fast, easy, and reliable ‘point of sale’ solution.</p>
+          </div>
+        </div>
+        <div class="col-lg-7 min-hei  bg-main">
+          <div class="container pd-lg-x-100 pd-xl-x-120 pd-y-30 pd-x-20">
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <ul class="navbar-nav ml-auto">
+                  <img src="./assets/img/UBA-Logo.png"  class="img-fluid" alt="" srcset="">
+                </ul>
+            </nav>
+            <main>
+              <div class="pd-md-t-80 pd-t-30 pd-lg-l-50">
+                <p class="tx-32 tx-bold mg-b-0">Login</p>
+                <p class="tx-subdued tx-14">Please enter your information to login.</p>
+                <div class="col-lg-9 col-md-10 pd-x-0 pd-y-10">
+                  <form action="" class="pd-md-b-60 pd-b-30">
+                    <div class="form-group required mg-b-15">
+                      <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-3">Username/Email</label>
+                      <input type="email" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group required mg-b-5">
+                      <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-3">Personal Email</label>
+                      <div class="input-group" id="show_hide_password">
+                        <input type="password" class="form-control bd-r-0">
+                        <div class="input-group-append bd-0">
+                          <span class="input-group-text bd-l-0 bg-white" id="basic-addon2">
+                          <i class="fa fa-eye-slash" id="togglePassword"></i>
+                          </span>
+                        </div>
+                       </div>
+                    </div>
+                    <a href="./forgot-password.html" class="tx-medium tx-subdued" style="text-decoration: underline;">Forgot Password? </a>
+                    
+                    <div class=" mg-t-30">
+                    <button class="btn btn-primary  w-100 tx-16">Login</button>
+                   
+                    <div class="tx-center mg-t-15">
+                        <a href="./register.html" class="tx-primary tx-12 mb-0 tx-semibold"> <span class="tx-subdued tx-normal"> Don’t have an account? </span>Signup</a>
+                    </div>
+                    </div>
+                  </form>
+                  <div class="">
+                    <hr class="">
+                      <div class="d-flex">
+                        <a href="" class="tx-blue-900 tx-semibold mg-b-0 tx-14">Need Help</a>
+                        <img src="./assets/img/live_help_24px.svg" alt="" class="img-fluid pd-l-15" srcset="">
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+
+      </div>
+    </div>
+      
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/feather-icons/feather.min.js"></script>
+    <script src="assets/js/dashforge.js"></script>
+    <script>
+   
+$(document).ready(function () {
+  $("#togglePassword").on("click", function (event) {
+    event.preventDefault();
+    $("#togglePassword").toggleClass('fa-eye fa-eye-slash');
+    if ($("#show_hide_password input").attr("type") == "text") {
+      $("#show_hide_password input").attr("type", "password");
+    } else if ($("#show_hide_password input").attr("type") == "password") {
+      $("#show_hide_password input").attr("type", "text");
+    }
+  });
+});
+</script>
+    
+  </body>
+</html>

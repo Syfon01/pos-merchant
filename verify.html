@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Verify || POS Merchant</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+
+    <!-- Required External CSS -->
+    <link href="assets/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+  </head>
+  <body>
+   
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 col-12 left-side d-none d-md-block">
+          <div class="tx-white pd-md-y-150 pd-md-x-50 pd-lg-x-80 uba-bg">
+            <p class="tx-64 tx-bold text-height-1">
+              UBA POS Merchant Portal
+            </p>
+            <p class="tx-20 col-md-9 pd-x-0">Fast, easy, and reliable ‘point of sale’ solution.</p>
+          </div>
+        </div>
+        <div class="col-lg-7 min-hei  bg-main">
+          <div class="container pd-lg-x-100 pd-xl-x-120 pd-y-30  pd-x-20">
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <ul class="navbar-nav ml-auto">
+                  <img src="./assets/img/UBA-Logo.png"  class="img-fluid" alt="" srcset="">
+                </ul>
+            </nav>
+            <main>
+              <div class="pd-md-t-60 pd-t-30 col-md-10 pd-x-0">
+                <p class="tx-12 tx-semibold mg-b-25">STEP 1 OF 2</p>
+                <p class="tx-32 tx-bold mg-b-0">One-Time Password </p>
+                <p class="tx-subdued tx-14">For verification, please enter the one-time password (OTP) that we sent to your primary phone number and email.</p>
+                <div class=" pd-x-0 pd-y-10">
+                  <form method="get" class="digit-group mg-t-20" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                    <div class="form-group required mg-b-15">
+                      <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-3">Enter OTP </label>
+                      <input type="text" id="digit-1" name="digit-1" data-next="digit-2" placeholder="" />
+                      <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" placeholder="" />
+                      <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" placeholder="" />
+                      <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" placeholder="" />
+                      <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" placeholder="" />
+                      <input type="text" id="digit-6" name="digit-6" data-previous="digit-5" placeholder="" />
+                      <label for="" class="tx-12 tx-subdued mb-0">Didn’t receive any OTP? Resend in <span class="tx-medium">40s</span> </label>
+                    </div>
+                  </form>
+                  <div class="d-flex justify-content-md-end">
+                    <a href="./mail.html" class="btn btn-primary mg-t-30 pd-x-50 d-block">Verify</a>
+                  </div>
+                  <div class="mg-md-t-150 mg-t-200">
+                    <hr class="">
+                    <div class="d-flex">
+                      <a href="" class="tx-blue-900 tx-semibold mg-b-0 tx-14">Need Help</a>
+                      <img src="./assets/img/live_help_24px.svg" alt="" class="img-fluid pd-l-15" srcset="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+
+      </div>
+    </div>
+      
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/feather-icons/feather.min.js"></script>
+    <script src="assets/js/dashforge.js"></script>
+    <script>
+      $('.digit-group').find('input').each(function() {
+        $(this).attr('maxlength', 1);
+        $(this).on('keyup', function(e) {
+          let parent = $($(this).parent());
+          
+          if(e.keyCode === 8 || e.keyCode === 37) {
+            let prev = parent.find('input#' + $(this).data('previous'));
+            
+            if(prev.length) {
+              $(prev).select();
+            }
+          } else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+            let next = parent.find('input#' + $(this).data('next'));
+            
+            if(next.length) {
+              $(next).select();
+            } else {
+              if(parent.data('autosubmit')) {
+                parent.submit();
+              }
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

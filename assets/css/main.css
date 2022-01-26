@@ -66,10 +66,19 @@ body{
 .bg-blue-50{
   background-color: #DEEBFF;
 }
+.btn-close{
+  background: #fff!important;
+  border: 1px solid rgba(209, 213, 219, 1)!important;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  font-weight:600;
+  color: rgba(55, 65, 81, 1)!important;
+}
 .btn-outline{
   border: 1px solid rgba(110, 132, 163, 1)!important;
   box-shadow: 0px 2px 2px 0px rgba(152, 162, 179, 0.15);
   font-weight: 700;
+   
 }
 .btn-outline-dark{
   border: 1px solid #fff!important;

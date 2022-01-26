@@ -1,3 +1,7 @@
+*{
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  }
 body{
   color: #24292E;
 }

@@ -40,6 +40,12 @@ body{
 .tx-gray-700{
   color: #374151;
 }
+.tx-gray-600{
+  color: #4B5563;
+}
+.tx-gray-500{
+  color: #6B7280;
+}
 .tx-gray{
   color:#6B5D5D;
 }
@@ -47,8 +53,11 @@ body{
   color: #343434;
 }
 
-.bg-gray-10{
-  background-color: #FAFBFC;
+.bg-grey-100{
+  background-color: #F3F4F6;
+}
+.bg-grey-200{
+  background-color: #E5E7EB;
 }
 .fa-circle-small{
   font-size: 6px!important;
@@ -154,3 +163,50 @@ body{
 }
 
  }
+
+ .drop-zone {
+  width: 100%;
+  height: auto;
+  border: 1px dashed #ddd;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  /* color: #666; */
+  overflow: hidden;
+  cursor: pointer;
+  /* background: #fff; */
+}
+
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 15vh;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  background-size: cover;
+  position: relative;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+.form-drop{
+  height: 100%;
+}

@@ -216,3 +216,211 @@ body{
 .form-drop{
   height: 100%;
 }
+
+.control-height{
+  height: 90vh;
+}
+.bg-black{
+  background-color: #000!important;
+}
+.bg-aside{
+  background-color:#E9EDF3!important ;
+}
+.secondary-bg{
+  background-color: #F9FAFC!important;
+}
+.image-box{
+  background: rgba(243, 244, 246, 1);
+  height: 50%;
+  border-radius: 5px;
+}
+
+.bg-yellow-light{
+  background-color: rgba(251, 176, 55, 1);
+}
+.bg-orange-light{
+background-color: rgba(255, 220, 163, 1);
+}
+.bg-brownish{
+  background-color: rgba(184, 113, 0, 1);
+}
+.bg-blue-800{
+  background-color: #1E40AF;
+  }
+.bg-blue-500{
+  background-color: #3B82F6;
+  }
+.bg-blue-300{
+  background-color: #93C5FD;
+  }
+  .bg-blue-100{
+    background: #DBEAFE;
+  }
+  .bg-indigo-100{
+    background-color: #E0E7FF;
+  }
+  .bg-yellow-100{
+    background-color: #FEF3C7;
+  }
+  .bg-red-100{
+    background-color:#FEE2E2;
+  }
+  .tx-blue-800{
+    color: #1E40AF;
+  }
+  .tx-yellow-800{
+    color: #92400E;
+  }
+  .tx-red-800{
+    color: #991B1B;
+  }
+.brand tr th{
+  font-weight: 700!important;
+}
+.footer-gray{
+  background-color: rgba(249, 250, 252, 1)!important;
+}
+.display.dataTable{
+  border: none;
+}
+.display th, .display td{
+  border-bottom: none!important;
+}
+.table{
+  width:100%!important;
+}
+.table-head{
+  background-color: #F9FAFC!important;
+}
+table.dataTable.display tr td{
+  /* border-top: 0 !important; */
+}
+table.dataTable.no-footer{
+  border-bottom: none;
+}
+table.dataTable thead .sorting::after{
+  content: "\25BC"!important;
+  color: #D2DDEC;
+}
+table.dataTable thead .sorting::before{
+  content: "\25B2"!important;
+  color: #D2DDEC;
+}
+table.dataTable thead .sorting_asc::after{
+  content: "\25B2"!important;
+  color: #D2DDEC;
+}
+.display tr th, .display tr td{
+font-size: 12px!important;
+}
+.display tr th{
+  font-weight: 600!important;
+}
+.nav-link.tab.active{
+  color: #000!important;
+  font-weight: 700!important;
+  }
+  .nav-link.active.bg{
+    background-color: #DB4C3F!important;
+    font-weight: 700!important;
+  }
+  .nav-line .nav-link{
+    padding: 6px 15px!important;
+  }
+  .avatar img{
+    border: 0!important;
+  }
+  .breadcrumb-style1 .breadcrumb-item{
+    text-transform: capitalize!important;
+    font-size: 14px!important;
+    font-weight: 400!important;
+  }
+  .tx-gray-card{
+    color: #6A737D;
+  }
+  .my-search{
+    display: flex;
+    align-items: stretch;
+  }
+  .my-search button {
+    display: flex;
+    align-items: center;
+    padding: 0 .5rem;
+    border: 1px solid #c0ccda;
+    border-right-width: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius: 0.25rem;
+    color: #8392a5;
+    background-color: #fff;
+}
+.my-search .form-control {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left-width: 0;
+}
+.nav-tabs .nav-link.cat{
+  border: 1px solid#DADFE4;
+  border-radius: 5px;
+
+}
+.nav-tabs .nav-link.cat.active{
+background-color: #F5DDDD!important;
+color: #D70900!important;
+/* border: 1px solid #F6ADAD; */
+font-weight: 600;
+}
+.nav-tabs .nav-link.cat{
+  color: #6A737D;
+  background-color: #F2F5F9;
+}
+.nav-tabs .nav-link.cat.active img{
+fill: #d70900!important;
+-webkit-filter: invert(40%) grayscale(200%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(800%) contrast(2);
+
+  }
+  .nav-aside .nav-item.active .nav-link::before{
+    border-left-color: transparent!important;
+  }
+  .nav-aside .nav-item.active .nav-link{
+    background-color: #FEF2F2;
+    font-weight: 600!important;
+  }
+  .nav-aside .nav-link{
+    padding: 15px 10px!important;
+    height: 40px!important;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  .nav-aside .nav-item.active svg{
+    -webkit-filter: invert(15%) sepia(98%) saturate(5803%) hue-rotate(6deg) brightness(84%) contrast(110%);
+    filter: invert(15%) sepia(98%) saturate(5803%) hue-rotate(6deg) brightness(84%) contrast(110%);;
+  }
+   
+  .nav-aside .nav-item ul{
+    padding-left: 44px!important;
+  }
+
+  .nav-link.active .badge{
+    background: #d70900;
+    color: #fff;
+  }
+  .nav-link .badge{
+    background: rgba(209, 213, 218, 0.5);
+    border-radius:50%;
+  }
+  .badge{
+    border-radius: 3px;
+    padding-top: 4px!important;
+    padding-bottom: 3px!important;
+
+}
+/* .chartDo{
+
+  width:200px !important;
+  height:150px !important;
+
+} */
+.content-header, .aside-header{
+  height: 75px!important;
+}

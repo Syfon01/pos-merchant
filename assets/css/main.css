@@ -401,7 +401,7 @@ fill: #d70900!important;
     padding-left: 44px!important;
   }
 
-  .nav-link.active .badge{
+  .nav-item.active .nav-link .badge{
     background: #d70900;
     color: #fff;
   }
@@ -423,4 +423,12 @@ fill: #d70900!important;
 } */
 .content-header, .aside-header{
   height: 75px!important;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover{
+  background: #d70900;
+}
+.daterangepicker td.in-range{
+  background-color:#F8F7FA ;
+  color: #d70900;
+  font-weight: 600;
 }

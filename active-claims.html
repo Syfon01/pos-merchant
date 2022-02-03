@@ -570,89 +570,92 @@
 
            </div>
 
-           <!-- filter modal  -->
-           <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header pd-b-10 pd-t-20">
-                  <p class="tx-bold tx-20 modal-title" id="exampleModalLabel">Filter Claims</p>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form action="">
-                    <div class="row">
-                      <div class="form-group col-md-6">
-                        <label for="" class="tx-medium tx-14 mg-b-0">Dispute ID</label>
-                        <input type="text" class="form-control">
+            <!-- filter modal  -->
+            <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header pd-b-10 pd-t-20">
+                    <p class="tx-bold tx-20 modal-title" id="exampleModalLabel">Filter Claims</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="">
+                      <div class="row">
+                        <div class="form-group col-md-6">
+                          <label for="" class="tx-medium tx-14 mg-b-0">Dispute ID</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="" class="tx-medium tx-14 mg-b-0">Processor ID</label>
+                          <select name="" id="" class="custom-select">
+                            <option value=""></option>
+                            <option value="">Processor 1</option>
+                            <option value="">Processor 2</option>
+                            <option value="">Processor 3</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="" class="tx-medium tx-14 mg-b-0">Terminal ID</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="" class="tx-medium tx-14 mg-b-0">Batch ID</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="" class="tx-medium tx-14 mg-b-0">Account Number</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="" class="tx-medium tx-14 mg-b-0">Country</label>
+                          <select name="" id="" class="custom-select">
+                            <option value="">Nigeria</option>
+                            <option value="">Ghana</option>
+                            <option value="">Cameroun</option>
+                            <option value="">Kenya</option>
+                            <option value="">Egypt</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="" class="tx-medium tx-14 mg-b-0">Status</label>
+                          <select name="" id="" class="custom-select">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="" class="tx-medium tx-14 mg-b-0">Response</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="" class="tx-medium tx-14 mg-b-0">Transaction Start Date</label>
+                          <input type="date" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="" class="tx-medium tx-14 mg-b-0">Transaction End Date</label>
+                          <input type="date" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="" class="tx-medium tx-14 mg-b-0">Response Start Date</label>
+                          <input type="date" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="" class="tx-medium tx-14 mg-b-0">Response End Date</label>
+                          <input type="date" class="form-control">
+                        </div>
                       </div>
-                      <div class="form-group col-md-6">
-                        <label for="" class="tx-medium tx-14 mg-b-0">Processor ID</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="" class="tx-medium tx-14 mg-b-0">Terminal ID</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="" class="tx-medium tx-14 mg-b-0">Batch ID</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="" class="tx-medium tx-14 mg-b-0">Account Number</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="" class="tx-medium tx-14 mg-b-0">Country</label>
-                        <select name="" id="" class="custom-select">
-                          <option value="">Nigeria</option>
-                          <option value="">Ghana</option>
-                          <option value="">Cameroun</option>
-                          <option value="">Kenya</option>
-                          <option value="">Egypt</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="" class="tx-medium tx-14 mg-b-0">Status</label>
-                        <select name="" id="" class="custom-select">
-                          <option value=""></option>
-                          <option value=""></option>
-                          <option value=""></option>
-                          
-                        </select>
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="" class="tx-medium tx-14 mg-b-0">Response</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="" class="tx-medium tx-14 mg-b-0">Transaction Start Date</label>
-                        <input type="date" class="form-control">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="" class="tx-medium tx-14 mg-b-0">Transaction End Date</label>
-                        <input type="date" class="form-control">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="" class="tx-medium tx-14 mg-b-0">Response Start Date</label>
-                        <input type="date" class="form-control">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="" class="tx-medium tx-14 mg-b-0">Response End Date</label>
-                        <input type="date" class="form-control">
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="modal-footer bg-modal-footer pd-y-10">
-                  <button type="button" class="btn btn-close pd-x-50 pd-md-x-80 tx-grey-700 tx-semibold pd-y-7" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary pd-x-50 pd-md-x-80  pd-y-7">Apply Filter</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer bg-modal-footer pd-y-10">
+                    <button type="button" class="btn btn-close pd-x-50 pd-md-x-80 tx-grey-700 tx-semibold pd-y-7" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary pd-x-50 pd-md-x-80  pd-y-7">Apply Filter</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
            <!-- accept modal  -->
        <div class="modal fade" id="acceptModal" tabindex="-1" role="dialog" aria-labelledby="acceptModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">

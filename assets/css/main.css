@@ -469,3 +469,6 @@ fill: #d70900!important;
 button img{
   margin-top: -2px!important;
 }
+.nav-aside .nav-item ul a{
+  padding: 3.5px 0!important;
+}

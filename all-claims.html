@@ -186,7 +186,7 @@
           <hr class="mg-b-25 mg-t-0">
           <div class="card card-body h-100">
           <div class="row justify-content-between pd-b-10">
-            <div class="col-md-5 col-6 mg-b-15 mg-md-b-0">
+            <div class="col-md-4 col-6 mg-b-15 mg-md-b-0">
               <div class="d-flex align-items-center pd-t-10">
                 <p class="tx-16 tx-bold mg-b-0 ">All Claims </p>
                 <div>
@@ -195,12 +195,12 @@
               </div>
               
             </div>
-            <div class="col-md-7  mg-b-15 mg-md-b-0">
+            <div class="col-md-8  mg-b-15 mg-md-b-0">
               <div class="row row-sm justify-content-between align-items-center">
                 <div class="col-md-3 col-12">
                   <div class="d-flex align-items-center">
                     <p class="tx-14 tx-semibold tx-subdued mg-b-0">Show</p>
-                    <div class="dropdown mg-l-7">
+                    <div class="dropdown mg-l-7 w-100">
                       <button class="btn btn-close dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         All Claims
                       </button>
@@ -701,10 +701,13 @@
     $('.display').DataTable({
     "info": false,
     "responsive": true,
-    // "aoColumnDefs": [{
-    //     "bSortable": false,
-    //     "aTargets": [-1]
-    // }],
+    "targets": 'no-sort',
+    "bSort": false,
+    "order": [],
+    "aoColumnDefs": [{
+        "bSortable": false,
+        "aTargets": [-3]
+    }],
     "searching": false,
       "lengthChange": false,
     "bInfo": false,

@@ -654,41 +654,112 @@
           </div>
 
            <!-- accept modal  -->
-           <div class="modal fade" id="acceptModal" tabindex="-1" role="dialog" aria-labelledby="acceptModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header pd-b-10 pd-t-20">
-                  <div>
-                    <p class="tx-bold tx-20 modal-title mb-0" id="exampleModalLabel">Accept Claim</p>
-                    <p class="tx-14 tx-subdued mb-0">Customer will be refunded from your bank account.</p>
-                  </div>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form action="">
-                    <div class="form-group required">
-                      <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-3">Leave a Comment</label>
-                      <textarea name="" id="" rows="4" class="form-control"></textarea>
-                    </div>
-                    <div class="form-group required">
-                      <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-3">Leave a Comment</label>
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="customFile">
-                        <label class="custom-file-label" for="customFile">Choose file</label>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="modal-footer bg-modal-footer pd-y-10">
-                  <button type="button" class="btn btn-close pd-x-40 tx-grey-700 tx-semibold pd-y-7" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary pd-x-40  pd-y-7">Action</button>
-                </div>
+       <div class="modal fade" id="acceptModal" tabindex="-1" role="dialog" aria-labelledby="acceptModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header pd-b-10 pd-t-20">
+              <div>
+                <p class="tx-bold tx-20 modal-title mb-0" id="exampleModalLabel">Accept Claim</p>
+                <p class="tx-14 tx-subdued mb-0">Customer will be refunded from your bank account.</p>
               </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group required">
+                  <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-3">Leave a Comment</label>
+                  <textarea name="" id="" rows="4" class="form-control"></textarea>
+                </div>
+                <div class="form-group required">
+                  <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-3">Add an attachment</label>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer bg-modal-footer pd-y-10">
+              <button type="button" class="btn btn-close pd-x-40 tx-grey-700 tx-semibold pd-y-7" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary pd-x-40  pd-y-7">Action</button>
             </div>
           </div>
- 
+        </div>
+      </div>
+    
+      <!-- reject modal  -->
+      <div class="modal fade" id="rejectModal" tabindex="-1" role="dialog" aria-labelledby="rejectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header pd-b-10 pd-t-20">
+              <div>
+                <p class="tx-bold tx-20 modal-title mb-0" id="exampleModalLabel">Reject Claim</p>
+                <p class="tx-14 tx-subdued mb-0">No refund goes to the customer.</p>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group required">
+                  <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-3">Provide Justification</label>
+                  <textarea name="" id="" rows="4" class="form-control"></textarea>
+                </div>
+                <div class="form-group required">
+                  <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-3">Add an attachment</label>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer bg-modal-footer pd-y-10">
+              <button type="button" class="btn btn-close pd-x-40 tx-grey-700 tx-semibold pd-y-7" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary pd-x-40  pd-y-7">Action</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- comment modal  -->
+       <div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header pd-b-10 pd-t-20">
+              <div>
+                <p class="tx-bold tx-20 modal-title mb-0" id="exampleModalLabel">Add a New Comment</p>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <label for="formGroupExampleInput" class="d-block tx-medium mg-b-3">Enter Here</label>
+                  <textarea name="" id="" rows="4" class="form-control"></textarea>
+                </div>
+                <div class="form-group required">
+                  <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-3">Add an attachment</label>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer bg-modal-footer pd-y-10">
+              <button type="button" class="btn btn-close pd-x-40 tx-grey-700 tx-semibold pd-y-7" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary pd-x-40  pd-y-7">Action</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
       </div>
     </div>
 
